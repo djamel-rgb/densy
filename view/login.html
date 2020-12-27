@@ -2,14 +2,19 @@
 <html>
 <body>
 <link href="../static/css/login_style.css" type="text/css" rel="stylesheet" />
-   
+<script defer src="../login-page.js"></script>
 <div class="login">
-	<h1>Login</h1>
-    <form method="post">
-    	<input type="text" name="u" placeholder="Username" required="required" />
-        <input type="password" name="p" placeholder="Password" required="required" />
-        <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+    <h1>Login</h1>
+    <div id="login-error-msg-holder">
+        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    <form method="post", id=login-form>
+    	<input type="text" name="username" placeholder="username" required="required" id="usern"/>
+        <input type="password" name="password" placeholder="password" required="required" id="passw" />
+        <button type="submit" class="btn btn-primary btn-block btn-large" id="login-form-submit">Let me in.</button>
     </form>
 </div>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+</script>
 </body>
 </html>

@@ -1,5 +1,8 @@
 {
-  "name":    "Desny",
+  "name": "Desny",
   "version": "1.0.1",
-  "main":    "main.js"
+  "main": "main.js",
+  "dependencies": {
+    "sqlite3": "^5.0.0"
+  }
 }
